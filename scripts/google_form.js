@@ -117,7 +117,7 @@ function SendGoogleForm(e)
      htmlBody: message,
      cc: wrangler[1]
     });
-
+    
 
   } catch (e) {
     Logger.log(e.toString());
@@ -138,3 +138,6 @@ function formatGitHubId(id) {
   return "@" + id;
 }
 
+//would you plkease add a try part of the cache?
+//or is it that fine using cache without first trying it
+// I thought you should first try so as to find out if there would be any error.
